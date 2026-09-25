@@ -55,6 +55,13 @@ class Scratch {
         System.out.println("El descuento es:" + descuento );
         //7. Escribe un programa que lea un valor correspondiente a una distancia en millas marinas
         //y escriba la distancia en metros. Sabiendo que una milla marina equivale a 1.852 metros.
+        System.out.println("EJERCICIO 7");
+        Scanner progrogra = new Scanner(System.in);
+        System.out.println("Dime una distancia en millas: ");
+        double distancia = progrogra.nextDouble();
+        double distanciametros = (distancia / 1.852);
+        System.out.println("la distancia en metros es:" + distanciametros);
+
 
     }
 }

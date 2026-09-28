@@ -59,8 +59,33 @@ class Scratch {
         Scanner progrogra = new Scanner(System.in);
         System.out.println("Dime una distancia en millas: ");
         double distancia = progrogra.nextDouble();
-        double distanciametros = (distancia / 1.852);
+        double distanciametros = (distancia * 1.852);
         System.out.println("la distancia en metros es:" + distanciametros);
+        //8 Escribe un programa que lee dos números y los visualiza en orden ascendente.
+        System.out.println("EJERCICIO 8");
+        Scanner progrograma1 = new Scanner(System.in);
+
+        System.out.print("Introduce el primer número: ");
+        int num1 = progrograma1.nextInt();
+
+        System.out.print("Introduce el segundo número: ");
+        int num2 = progrograma1.nextInt();
+        System.out.println(Math.min(num1, num2) +""+ Math.max(num1,num2));
+
+
+        //9 Escribe un programa que lee dos números y nos dice cuál es el mayor o si son iguales.
+         System.out.println("EJERCICIO 9");
+         Scanner progrograma2 = new Scanner(System.in);
+         System.out.print("Introduce el primer número: ");
+         int numero1w = progrograma2.nextInt();
+         System.out.print("Introduce el primer número: ");
+         int numero2w = progrograma2.nextInt();
+        System.out.println(numero1w==numero2w);
+        System.out.println(numero1w>numero2w);
+        //10
+        
+
+
 
 
     }

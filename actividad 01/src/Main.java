@@ -83,7 +83,7 @@ class Scratch {
         System.out.println(numero1w==numero2w);
         System.out.println(numero1w>numero2w);
         //10
-        
+
 
 
 

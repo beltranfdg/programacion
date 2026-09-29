@@ -105,7 +105,39 @@ void main() {
         }
     }
     // EJERCICIO 6 Realiza un programa que muestre los números desde el 1 hasta un número N que se
-    //introducirá por teclado. 
+    //introducirá por teclado.
+    System.out.println("EJERCICIO 6");
+    Scanner programa3 = new Scanner(System.in);
+    System.out.println("di una edad");
+    int numero4 = programa3.nextInt();
+    for (int contador = 1; contador <= numero4; contador = contador + 1) {
+         {
+            System.out.println(contador);
+        }
+    }
+    //Escribe un programa que lea una calificación numérica entre 0 y 10 y la transforma en
+    //calificación alfabética, escribiendo el resultado.
+    //• de 0 a <3 Muy Deficiente.
+    //• de 3 a <5 Insuficiente.
+    //• de 5 a <6 Bien.
+    //• de 6 a <9 Notable
+    //• de 9 a 10 Sobresaliente
+
+    System.out.println("EJERCICIO 7");
+    Scanner programa4 = new Scanner(System.in);
+    System.out.println("di una NOTA");
+    int numero5 = programa3.nextInt();
+    if(numero5 >= 0 && numero5<=3);
+    System.out.println("tu nota es muy deficiente");
+    if (numero5>=3 && numero5<=5);
+    System.out.println("tu nota es muy insuficiente");
+    if(numero5 >= 5 && numero5<=6);
+    System.out.println("tu nota es muy bien");
+    if(numero5 >= 6 && numero5<=9);
+    System.out.println("tu nota es muy notable");
+    if(numero5 >= 9 && numero5<=10);
+    System.out.println("tu nota es muy sobresaliente");
+    //sin acabar
 
 
 

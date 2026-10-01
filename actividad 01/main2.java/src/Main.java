@@ -19,7 +19,8 @@ void main() {
     } else {
         System.out.println("pasas");
     }
-    //Realiza un programa que muestre por pantalla los 20 primeros números naturales (1, 2,
+    //ejercicio 3
+    // Realiza un programa que muestre por pantalla los 20 primeros números naturales (1, 2,
     //3... 20).
     System.out.println("EJERCICIO 3");
 
@@ -88,14 +89,16 @@ void main() {
                 System.out.println("20");
                 break;
         }
-        //4. Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200.
+        //4.
+    // Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200.
     //Para ello utiliza un contador y suma de 2 en 2.
     System.out.println("EJERCICIO 4");
 
     for (int contador = 2; contador <= 200; contador = contador + 2) {
         System.out.println(contador);
     }
-    //5 Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200.
+    //5
+    // Realiza un programa que muestre los números pares comprendidos entre el 1 y el 200.
     //Esta vez utiliza un contador sumando de 1 en 1.9
     System.out.println("EJERCICIO 5");
 
@@ -104,7 +107,8 @@ void main() {
             System.out.println(contador);
         }
     }
-    // EJERCICIO 6 Realiza un programa que muestre los números desde el 1 hasta un número N que se
+    // EJERCICIO 6
+    // Realiza un programa que muestre los números desde el 1 hasta un número N que se
     //introducirá por teclado.
     System.out.println("EJERCICIO 6");
     Scanner programa3 = new Scanner(System.in);
@@ -115,7 +119,8 @@ void main() {
             System.out.println(contador);
         }
     }
-    //Escribe un programa que lea una calificación numérica entre 0 y 10 y la transforma en
+    //EJERCICIO 7
+    // Escribe un programa que lea una calificación numérica entre 0 y 10 y la transforma en
     //calificación alfabética, escribiendo el resultado.
     //• de 0 a <3 Muy Deficiente.
     //• de 3 a <5 Insuficiente.
@@ -127,18 +132,74 @@ void main() {
     Scanner programa4 = new Scanner(System.in);
     System.out.println("di una NOTA");
     int numero5 = programa3.nextInt();
-    if(numero5 >= 0 && numero5<=3);
-    System.out.println("tu nota es muy deficiente");
-    if (numero5>=3 && numero5<=5);
-    System.out.println("tu nota es muy insuficiente");
-    if(numero5 >= 5 && numero5<=6);
-    System.out.println("tu nota es muy bien");
-    if(numero5 >= 6 && numero5<=9);
-    System.out.println("tu nota es muy notable");
-    if(numero5 >= 9 && numero5<=10);
-    System.out.println("tu nota es muy sobresaliente");
-    //sin acabar
+    if(numero5 >= 0 && numero5<=3)
+    System.out.println("tu nota es deficiente");
+    else if (numero5>=3 && numero5<=5)
+    System.out.println("tu nota es insuficiente");
+    else if(numero5 >= 5 && numero5<=6)
+    System.out.println("tu nota es un bien");
+    else if(numero5 >= 6 && numero5<=9)
+    System.out.println("tu nota es un notable");
+    else if(numero5 >= 9 && numero5<=10)
+    System.out.println("tu nota es un sobresaliente");
 
+    //EJERCICIO 8
+    // Realiza un programa que lea un número positivo N y calcule y visualice su factorial N!
+    //Siendo el factorial:
+    //• 0! = 1
+    //• 1! = 1
+    //• 2! = 2 * 1
+    //• 3! = 3 * 2* 1
+    //• N! = N * (N-1) * (N-2)........* 3*2*1
+
+    System.out.println("EJERCICIO 8");
+    Scanner programa5 = new Scanner(System.in);
+    System.out.print("Introduce un número: ");
+    int n = programa5.nextInt();
+    int factorial = 1;
+
+    for (int i = 1; i <= n; i++) {
+        factorial = factorial * i;
+    }
+
+    System.out.println("El factorial de " + n + " es: " + factorial);
+    // EJERCICIO 9
+    // Escribe un programa que recibe como datos de entrada una hora expresada en horas,
+    //minutos y segundos que nos calcula y escribe la hora, minutos y segundos que serán,
+    //transcurrido un segundo.
+    System.out.println("EJERCICIO 9");
+    Scanner programa6 = new Scanner(System.in);
+    System.out.print("Introduce unas horas: ");
+    int horas = programa6.nextInt();
+    System.out.print("Introduce unas minitos: ");
+    int minutos = programa6.nextInt();
+    System.out.print("Introduce unas segundos: ");
+    int segundos = programa6.nextInt();
+    if(segundos==60)
+        segundos=0;
+        minutos++;
+    if (minutos==60);
+    minutos=0;
+    horas++;
+    if(horas==24);
+    horas=0;
+    System.out.println("La hora dentro de un segundo será: "
+            + horas + ":" + minutos + ":" + segundos);
+
+    // EJERCICIO10 Realiza un programa que lea 10 números no nulos y luego muestre un mensaje de si ha
+    //leído algún número negativo o no.
+    System.out.println("EJERCICIO 10");
+    Scanner programa7 = new Scanner(System.in);
+    boolean negativo = false;
+    for(int i=0;i<=10;i++);
+    System.out.println("di un numero");
+    int numero7 = programa6.nextInt();
+    if(numero7<=0);{
+        negativo= true;
+
+    }
+    if (numero7=true);
+    }
 
 
 

@@ -198,10 +198,13 @@ void main() {
         negativo= true;
 
     }
-    if (numero7=true);
+    if (numero7=true);{
+        System.out.println("en negativo");
+
     }
-
-
+    else(numero7=false){
+        System.out.println("es positivo");
+    }
 
 
 

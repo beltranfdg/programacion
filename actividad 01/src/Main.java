@@ -196,13 +196,9 @@ void main() {
     int numero7 = programa6.nextInt();
     if(numero7<=0);{
         negativo= true;
-
-    }
-    if (numero7=true);{
         System.out.println("en negativo");
-
     }
-    else(numero7=false){
+    if (numero7>=0){
         System.out.println("es positivo");
     }
 

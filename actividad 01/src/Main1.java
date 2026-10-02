@@ -156,7 +156,7 @@ void main() {
     Scanner programa5 = new Scanner(System.in);
     System.out.print("Introduce un número: ");
     int n = programa5.nextInt();
-    int factorial = 1;
+    double factorial = 1;
 
     for (int i = 1; i <= n; i++) {
         factorial = factorial * i;
@@ -175,13 +175,13 @@ void main() {
     int minutos = programa6.nextInt();
     System.out.print("Introduce unas segundos: ");
     int segundos = programa6.nextInt();
-    if(segundos==60)
+    if(segundos>=60)
         segundos=0;
     minutos++;
-    if (minutos==60);
+    if (minutos>=60);
     minutos=0;
     horas++;
-    if(horas==24);
+    if(horas>=24);
     horas=0;
     System.out.println("La hora dentro de un segundo será: "
             + horas + ":" + minutos + ":" + segundos);

@@ -242,5 +242,95 @@ void main() {
 
 
 
+    //TAREA= UD2- Actividad 3
+    // EJERCICIO 1
+    //Realiza un programa que dada una cantidad de euros que el usuario introduce por
+    //teclado (múltiplo de 5 €) mostrará los billetes de cada tipo que serán necesarios para
+    //alcanzar dicha cantidad (utilizando billetes de 500, 200, 100, 50, 20, 10 y 5). Hay que
+    //indicar el mínimo de billetes posible. Por ejemplo, si el usuario introduce 145 el
+    //programa indicará que será necesario 1 billete de 100 €, 2 billetes de 20 € y 1 billete de
+    //5 € (no será válido por ejemplo 29 billetes de 5, que aunque sume 145 € no es el mínimo
+    //número de billetes posible).
+
+    System.out.println("EJERCICIO 10");
+    Scanner programa9 = new Scanner(System.in);
+    int cantidad = programa8.nextInt();
+    int billetes_500 = cantidad/500;
+    cantidad = cantidad % 500;
+    int billetes_200 = cantidad/200;
+    cantidad= cantidad % 200;
+    int billetes_100 = cantidad/100;
+    cantidad = cantidad % 100;
+    int billetes_50 = cantidad/50;
+    cantidad= cantidad % 50;
+    int billetes_20 = cantidad/20;
+    cantidad= cantidad % 20;
+    int billetes_10 = cantidad/10;
+    cantidad = cantidad % 10;
+    int billetes_5 = cantidad/5;
+
+    System.out.println("billetes de 500€"+ billetes_500);
+    System.out.println("billetes de 200€"+ billetes_200);
+    System.out.println("billetes de 100€"+ billetes_100);
+    System.out.println("billetes de 50€"+ billetes_50);
+    System.out.println("billetes de 20€"+ billetes_20);
+    System.out.println("billetes de 10€"+ billetes_10);
+    System.out.println("billetes de 5€"+ billetes_5);
+
+
+    // EJERCICIO 2
+    // Realiza un programa que muestre un menú de opciones como el siguiente:
+    //1. Sumar
+    //2. Restar
+    //3. Multiplicar
+    //4. Dividir (incluir manejo de división por 0)
+    //5. Salir
+    //El menú debe de repetirse hasta que se escoja la opción 5 (Salir).
+    System.out.println("EJERCICIO 10");
+
+    Scanner programa10 = new Scanner(System.in);
+
+    int opciones1;
+
+    do {
+
+        System.out.println("1. Sumar");
+        System.out.println("2. Restar");
+        System.out.println("3. Multiplicar");
+        System.out.println("4. Dividir");
+        System.out.println("5. Salir");
+
+        System.out.println("Elige una opción:");
+        opciones1 = programa10.nextInt();
+
+        switch (opciones1) {
+
+            case 1:
+                System.out.println("Sumar");
+                break;
+
+            case 2:
+                System.out.println("Restar");
+                break;
+
+            case 3:
+                System.out.println("Multiplicar");
+                break;
+
+            case 4:
+                System.out.println("Dividir");
+                break;
+
+            case 5:
+                System.out.println("Salir");
+                break;
+
+            default:
+                System.out.println("Opción no válida");
+        }
+
+    } while (opciones1 != 5);
+
+
 
 }

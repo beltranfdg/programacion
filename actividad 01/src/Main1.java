@@ -4,7 +4,7 @@ void main() {
     Scanner programa = new Scanner(System.in);
     System.out.println("di una edad");
     int numero = programa.nextInt();
-    if(numero >= 18);
+    if (numero >= 18) ;
     System.out.println("puedes pasar");
 
 // ej 2
@@ -132,15 +132,15 @@ void main() {
     Scanner programa4 = new Scanner(System.in);
     System.out.println("di una NOTA");
     int numero5 = programa3.nextInt();
-    if(numero5 >= 0 && numero5<=3)
+    if (numero5 >= 0 && numero5 <= 3)
         System.out.println("tu nota es deficiente");
-    else if (numero5>=3 && numero5<=5)
+    else if (numero5 >= 3 && numero5 <= 5)
         System.out.println("tu nota es insuficiente");
-    else if(numero5 >= 5 && numero5<=6)
+    else if (numero5 >= 5 && numero5 <= 6)
         System.out.println("tu nota es un bien");
-    else if(numero5 >= 6 && numero5<=9)
+    else if (numero5 >= 6 && numero5 <= 9)
         System.out.println("tu nota es un notable");
-    else if(numero5 >= 9 && numero5<=10)
+    else if (numero5 >= 9 && numero5 <= 10)
         System.out.println("tu nota es un sobresaliente");
 
     //EJERCICIO 8
@@ -175,14 +175,14 @@ void main() {
     int minutos = programa6.nextInt();
     System.out.print("Introduce unas segundos: ");
     int segundos = programa6.nextInt();
-    if(segundos>=60)
-        segundos=0;
+    if (segundos >= 60)
+        segundos = 0;
     minutos++;
-    if (minutos>=60);
-    minutos=0;
+    if (minutos >= 60) ;
+    minutos = 0;
     horas++;
-    if(horas>=24);
-    horas=0;
+    if (horas >= 24) ;
+    horas = 0;
     System.out.println("La hora dentro de un segundo será: "
             + horas + ":" + minutos + ":" + segundos);
 
@@ -191,7 +191,7 @@ void main() {
     System.out.println("EJERCICIO 10");
     Scanner programa7 = new Scanner(System.in);
     boolean negativo = false;
-    for(int i=0;i<=10;i++) {
+    for (int i = 0; i <= 10; i++) {
         System.out.println("di un numero");
         int numero7 = programa6.nextInt();
         if (numero7 <= 0) ;
@@ -199,10 +199,9 @@ void main() {
             negativo = true;
 
         }
-        if(negativo){
+        if (negativo) {
             System.out.println("He leído algún número negativo");
-        }
-        else{
+        } else {
             System.out.println("No he leído ningún número positivo");
         }
     }
@@ -216,15 +215,15 @@ void main() {
     int numeros_positivos = 0;
     int numeros_negativos = 0;
 
-    for(int i=1; i<=10; i++){
+    for (int i = 1; i <= 10; i++) {
         System.out.println("Di un numero:");
         int numero8 = programa8.nextInt();
 
-        if(numero8 < 0){
+        if (numero8 < 0) {
             numeros_negativos++;
         }
 
-        if(numero8 > 0){
+        if (numero8 > 0) {
             numeros_positivos++;
         }
     }
@@ -237,9 +236,23 @@ void main() {
 
     // EJERCICIO 13 Realiza un programa que calcule y escriba la suma y el producto de los 10 primeros
     //números naturales.
-    int suma;
-    int producto;
+    System.out.println("EJERCICIO 10");
 
+
+
+
+            int suma = 0;
+            int producto = 1;
+
+            for (int i = 1; i <= 10; i++) {
+                suma = suma + i;
+                producto = producto * i;
+            }
+
+            System.out.println("La suma es: " + suma);
+            System.out.println("El producto es: " + producto);
+
+    
 
 
     //TAREA= UD2- Actividad 3

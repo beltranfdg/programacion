@@ -9,10 +9,9 @@ void main() {
     int numero = programa.nextInt();
     int numeros[] = new int[10];
 
-    for (int i = 0; i < 10; i++) { // i = 0,1,2,3,4
+    for (int i = 0; i < 10; i++) {
         System.out.println("Dame un número: ");
         int num = programa.nextInt();
-        // Meto en un array/lista
         numeros[i] = num;
 
     }
@@ -100,12 +99,98 @@ void main() {
             Scanner teclado3 = new Scanner(System.in);
 
             int[] numeros4 = new int[20];
-            int suma2 = 0;
+            int sumavalores = 0;
+            int media;
             for (int i = 0; i < numeros4.length; i++) {
                 System.out.println("Introduce un número entero:");
                 numeros4[i] = teclado.nextInt();
             }
-            
+            for (int i = 0; i < 20; i++) {
+            sumavalores = sumavalores + numeros4[i];
+            }
+
+            media = sumavalores / 20;
+
+            System.out.println("La media es: " + media);
+
+    //6. Crea un programa que pida dos valores enteros N y M, luego cree un array de tamaño
+    //N, escriba M en todas sus posiciones y lo muestre por pantalla.//
+
+
+            Scanner teclado4 = new Scanner(System.in);
+
+            int N, M;
+
+            System.out.println("Introduce el tamaño del array (N):");
+            N = teclado4.nextInt();
+
+            System.out.println("Introduce el número que quieres guardar (M):");
+            M = teclado4.nextInt();
+
+            int[] numeros5 = new int[N];
+
+            for (int i = 0; i < N; i++) {
+                numeros5[i] = M;
+            }
+            for (int i = 0; i < N; i++) {
+            System.out.println(numeros5[i]);}
+
+    //7. Crea un programa que pida dos valores enteros P y Q, luego cree un array que contenga
+    //todos los valores desde P hasta Q, y lo muestre por pantalla.
+            Scanner teclado5 = new Scanner(System.in);
+            int P, Q;
+
+            System.out.println("Introduce el tamaño del array (P):");
+            P = teclado4.nextInt();
+
+            System.out.println("Introduce el número que quieres guardar (Q):");
+            Q = teclado4.nextInt();
+            int[] numeros6 = new int[Q-P +1];
+            for (int i = 0; i < N; i++) {
+                numeros6[i] =P+ i;
+            }
+            for (int i = 0; i < N; i++) {
+                System.out.println(numeros6[i]);}
+    //8. Crea un programa que cree un array con 100 números reales aleatorios entre 0.0 y 1.0,
+    //utilizando Math.random(), y luego le pida al usuario un valor real R. Por último, mostrará
+    //cuántos valores del array son igual o superiores a R.
+    Scanner teclado6 = new Scanner(System.in);
+
+
+    double R;
+    int contador = 0;
+
+    double[] numeros7 = new double[100];
+
+    for (int i = 0; i < 100; i++) {
+        numeros7[i] = Math.random();
+    }
+    System.out.println("Introduce el número que quieres guardar (Q):");
+    R = teclado4.nextInt();
+    for (int i = 0; i < 100; i++) {
+        if(numeros7[i]>=R);
+        contador++;
+
+
+    }
+    System.out.println("IGUAL O SUPERIORES:");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
